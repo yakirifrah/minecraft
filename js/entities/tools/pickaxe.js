@@ -1,0 +1,4 @@
+class Pickaxe {
+    constructor() {
+    }
+}
