@@ -1,5 +1,5 @@
-class Dirt {
+class Dirt extends Box {
     constructor() {
-        this.dirt = 'dirt';
+        this.class = 'dirt';
     }
 }

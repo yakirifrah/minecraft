@@ -1,5 +1,5 @@
-class Grass {
+class Grass extends Box {
     constructor() {
-        this.grass = 'grass';
+        this.class = 'grass';
     }
 }

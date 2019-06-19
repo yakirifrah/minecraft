@@ -1,6 +1,8 @@
-class Tree {
+class Tree extends Box {
     constructor() {
-        this.leaft = 'leaft';
-        this.trunk = 'trunk';
+        this.class = {
+            leaft = 'leaft',
+            trunk = 'trunk'
+        }
     }
 }

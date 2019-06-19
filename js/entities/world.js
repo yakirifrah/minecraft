@@ -1,11 +1,11 @@
 const GRASS_LENGTH = 20;
 const DIRT_LENGTH = 120;
-const SKY_LENGTH = 240;
+const SKY_LENGTH = 214;
 const ROCK_LENGTH = 3;
 const CLOUD_LENGTH = 28;
 const TRUNK_LENGTH = 3;
 const LEAF_LENGTH = 12;
-const WORLD_LENGTH = 423;
+const WORLD_LENGTH_ROW = 20;
 
 class World {
     constructor() {
@@ -15,18 +15,11 @@ class World {
         this.dirtWorld = [];
         this.cloudWorld = [];
         this.treeWorld = [];
-
-
-
-
-
         this.createWorld = createWorld;
     }
     createWorld() {
         let world = [];
-        for (let i = 0; i < WORLD_LENGTH; i++) {
-            
-
+        for (let i = 0; i < WORLD_LENGTH_ROW; i++) {
 
         }
 
