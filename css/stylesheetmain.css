@@ -29,10 +29,17 @@ body{
 }
 
 .toolBox{
+    margin-top: 10%;
     margin-bottom: 10%;
-    height: 15%;
-    width: 100%;
-    border:1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 17%;
+    width: 65%;
+    align-content: center;
+    border:3px solid white;
+    background-color: grey;
+    background-repeat: no-repeat;
 }
 
 .axeBox{
