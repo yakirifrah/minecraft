@@ -2,7 +2,7 @@
 class World {
     constructor() {
         this.matrix = this.createWorld();
-        this.createMap = this.createMap;
+        this.tools = this.createTool();
     }
     createWorld() {
         let world = [
@@ -32,18 +32,11 @@ class World {
         ];
         return world;
     }
-    // createMap() {
-    //     let mainCon = $('#world');
-    //     for (var i = 0; i < this.world.length; i++) {
-    //         for (var j = 0; j < this.world[i].length; j++) {
-    //             let block = $('<div/>');
-    //             block.addClass(this.world[i][j].class)
-    //                 .addClass('box')
-    //                 .attr('data', this.world[i][j].data)
-    //             mainCon.append(block);
-    //         }
-    //     }
-    // }
-
+    createTool() {
+        let tools = [
+            new Axe(), new Pickaxe(), new Shovel(), new Tool()
+        ]
+        return tools;
+    }
 }
 
