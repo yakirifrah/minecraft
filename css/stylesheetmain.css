@@ -13,15 +13,48 @@ body{
 
 .world{
      height: 100%;
+     width: 90%;
 }
 
 .box{
     height:33px;
     width:33px;
     background-size: contain;
-    border: 1px solid black;
+    
     display: inline-block;
     margin-right: 0;
     margin-bottom: -4px;
     box-sizing: border-box;
+}
+
+
+.stone{
+   
+    background-image: url('../img/stone.png');
+   
+}
+
+.wood{
+   
+    background-image: url('../img/wood.jpg');
+}
+
+.sky{
+    background-color: rgb(15, 106, 190);
+}
+
+.ground{
+   
+    background-image: url('../img/ground.gif');
+}
+
+.grass{
+    
+     background-image: url('../img/grass.jpg');
+    
+}
+
+.leaf{
+     
+     background-image: url('../img/leaf.jpg');
 }
