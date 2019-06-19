@@ -1,9 +1,5 @@
-class Sky extends Box {
+class Sky  {
     constructor() {
         this.class = 'sky';
-        this.mineTool = '';
-
     }
-
-
 }

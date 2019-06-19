@@ -1,6 +1,5 @@
-class Cloud extends Box {
+class Cloud {
     constructor() {
-        super('cloud');
         this.class = 'cloud';
     }
 }
