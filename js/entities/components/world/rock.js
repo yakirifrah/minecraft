@@ -1,4 +1,4 @@
-class Rock extends Box {
+class Rock  {
     constructor() {
         this.class = 'rock';
     }
