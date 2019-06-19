@@ -15,15 +15,14 @@ class World {
         this.dirtWorld = [];
         this.cloudWorld = [];
         this.treeWorld = [];
-        this.createWorld = createWorld;
+        this.createWorld = this.createWorld;
     }
     createWorld() {
         let world = [];
         for (let i = 0; i < WORLD_LENGTH_ROW; i++) {
-
+            let col = [];
+            world.push(col.push(new Box()));
         }
-
-
     }
     createGrass() {
         for (let i = 0; i < GRASS_LENGTH; i++) {
@@ -62,3 +61,5 @@ class World {
         }
     }
 }
+
+let world = new World().createWorld();
