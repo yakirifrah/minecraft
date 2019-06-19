@@ -37,6 +37,7 @@ minemap.matrix = [
 ];
 
 minemap.createMap = function () {
+    console.log(minemap.matrix);
     let mainCon = $('#world');
     for (var i = 0; i < minemap.matrix.length; i++) {
         for (var j = 0; j < minemap.matrix[i].length; j++) {
