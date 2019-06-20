@@ -1,4 +1,3 @@
-
 let game = new Minecraft();
 let matrix = game.world.matrix;
 let tools = game.world.tools;
@@ -38,12 +37,12 @@ function intDomHtml() {
 // })
 function clickTool(e) {
     let tool = $(e.target);
-
+    // console.log(tool);
     let data = $(tool).attr('data');
     game.updateTool(data);
-    console.log(data);
+    // console.log(data);
 
-    console.log('click');
+    // console.log('click');
 }
 
 

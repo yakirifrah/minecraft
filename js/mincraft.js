@@ -6,24 +6,31 @@ class Minecraft {
     updateTool(tool) {
         this.tool.setTool(tool);
     }
+    sameTool(element, tool) {
+        if (element === tool) {
+            return true;
+        } else {
+            console.log("this is a element " + element);
+            console.log("this is a tool " + tool);
+            let toolBox = document.getElementsByClassName(tool);
+            $(toolBox).toggleClass("mistakeBorder");
+            setTimeout(function () {
+                $(toolBox).toggleClass("mistakeBorder");
+            }, 100);
+
+            return false;
+        }
+    }
     mine(e) {
-        // console.log(e.target.getAttribute("data"));
+        let div = e.target;
         let element = e.target.getAttribute("data");
-        let cuurentTool = this.tool.getTool();
-        console.log(cuurentTool);
+        let tool = game.tool.getTool();
+        if (game.sameTool(element, tool)) {
+            // console.log(div)
+            // console.log(element);
+            $(div).removeClass(div.classList[0]);
+            $(div).addClass("sky");
+        }
     }
 }
 
-
-
-
-
-
-function sameTool(element, tool) {
-    if (element === tool) {
-        return true;
-    } else {
-        $(tool).css("border-color", "red");
-        return false;
-    }
-} 

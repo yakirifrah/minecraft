@@ -5,7 +5,7 @@ class Tree {
             data: 'axe'
         },
             this.trunk = {
-                data: 'exe',
+                data: 'axe',
                 class: 'trunk'
             }
     }
