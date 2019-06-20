@@ -1,5 +1,5 @@
 
-let game = new Mincraft();
+let game = new Minecraft();
 let matrix = game.world.matrix;
 let tools = game.world.tools;
 let lenMatrix = matrix.length;
@@ -29,6 +29,8 @@ function intDomHtml() {
         }
         toolBar.append(block);
     }
+
+    $(".box").click(game.GetElementByClick);
 }
 // $(".toolBar").on('click', (event) => {
 //     console.log('click')
@@ -43,3 +45,5 @@ function clickTool(e) {
 
     console.log('click');
 }
+
+
