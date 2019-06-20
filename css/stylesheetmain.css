@@ -1,68 +1,61 @@
-body{
-    height:100vh;
+body {
+    height: 100vh;
     margin: 0;
     padding: 0;
     overflow: hidden;
-  background-image: url('../img/menu\ background.jpg');
+    background-image: url('../img/menu\ background.jpg');
 }
 
-.wraper{
+.wraper {
     height: 100%;
-    
+
     display: flex;
     flex-direction: row;
 }
 
-.world{
-     height: 100%;
-     width: 90%;
-    
+.world {
+    height: 100%;
+    width: 90%;
+
 }
 
-.toolBar{
-     height: 100%;
-     width: 9%;
-     
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-}
+.toolBar {
+    height: 100%;
+    width: 9%;
 
-.toolBox{
-    margin-top: 10%;
-    margin-bottom: 10%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    height: 17%;
-    width: 65%;
-    align-content: center;
-    border:3px solid white;
-    background-color: grey;
-    background-repeat: no-repeat;
 }
 
-.axeBox{
+.toolBox {
+    margin-bottom: 10%;
+    height: 15%;
+    width: 100%;
+    border: 1px solid black;
+}
+
+.axe {
     background-image: url('../img/axe.png');
 }
 
-.pickaxeBox{
-background-image: url('../img/pickaxe.png');
+.pickaxe {
+    background-image: url('../img/pickaxe.png');
 }
 
-.shovelBox{
-background-image: url('../img/shovel.png');
+.shovel {
+    background-image: url('../img/shovel.png');
 }
 
-.CurrentResource{
+.CurrentResource {
     height: 8%;
     width: 50%;
     border: 1px black solid;
 }
 
-.box{
-    height:33px;
-    width:33px;
+.box {
+    height: 33px;
+    width: 33px;
     background-size: contain;
     display: inline-block;
     margin-right: 0;
@@ -70,38 +63,38 @@ background-image: url('../img/shovel.png');
     box-sizing: border-box;
 }
 
-.box:hover{
+.box:hover {
     border: 0.5px solid white;
 }
 
 
-.stone{
-   
+.stone {
+
     background-image: url('../img/stone.png');
-   
+
 }
 
-.wood{
-   
+.trunk {
+
     background-image: url('../img/wood.jpg');
 }
 
-.sky{
+.sky {
     background-color: rgb(15, 106, 190);
 }
 
-.ground{
-   
+.ground {
+
     background-image: url('../img/ground.gif');
 }
 
-.grass{
-    
-     background-image: url('../img/grass.jpg');
-    
+.grass {
+
+    background-image: url('../img/grass.jpg');
+
 }
 
-.leaf{
-     
-     background-image: url('../img/leaf.jpg');
+.leaf {
+
+    background-image: url('../img/leaf.jpg');
 }
