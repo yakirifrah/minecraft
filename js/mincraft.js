@@ -25,20 +25,19 @@ class Minecraft {
 
 
     mine(e) {
-        // console.log("this is the element" + e.target.getAttribute("data"));
         let div = e.target;
         let element = e.target.getAttribute("data");
-        // console.log("this is the tool" + game.tool.getTool());
         let tool = game.tool.getTool();
         if (game.sameTool(element, tool)) {
-            console.log(div)
-            console.log(element);
+            // console.log(div)
+            // console.log(element);
             $(div).removeClass(div.classList[0]);
             $(div).addClass("sky");
         }
+
+
     }
+
+
 }
-
-
-
 
