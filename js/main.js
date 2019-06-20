@@ -37,9 +37,11 @@ function intDomHtml() {
 // })
 function clickTool(e) {
     let tool = $(e.target);
-    // console.log(tool);
+
+    console.log(tool);
     let data = $(tool).attr('data');
     game.updateTool(data);
+    game.tool.toolsToggle(e.target);
     // console.log(data);
 
     // console.log('click');

@@ -11,9 +11,9 @@ class Minecraft {
             return true;
         } else {
             let toolBox = document.getElementsByClassName(tool);
-            $(toolBox).toggleClass("mistakeBorder");
+            $(toolBox).toggleClass("toggleError");
             setTimeout(function () {
-                $(toolBox).toggleClass("mistakeBorder");
+                $(toolBox).toggleClass("toggleError");
             }, 100);
 
             return false;
@@ -32,5 +32,7 @@ class Minecraft {
             $(div).addClass("sky");
         }
     }
+
+
 }
 

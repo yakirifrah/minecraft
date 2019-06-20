@@ -31,6 +31,16 @@ body {
     height: 15%;
     width: 100%;
     border: 1px solid black;
+    background-image: url('../img/menu\ background.jpg');
+}
+
+.toolBox:focus{
+    border: 2px solid blue;
+}
+
+.toolBox:hover{
+    cursor: pointer;
+    background-color: rgb(1, 1, 104);
 }
 
 .axe {
@@ -45,8 +55,12 @@ body {
     background-image: url('../img/shovel.png');
 }
 
-.mistakeBorder{
+.toggleError{
    background-color: rgb(255, 0, 0);
+}
+
+.pickedToolColor{
+    border: 2px solid blue;
 }
 
 .CurrentResource {
