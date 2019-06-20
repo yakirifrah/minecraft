@@ -1,9 +1,8 @@
 
 let game = new Mincraft();
-
-let matrix = game.matrix;
+let matrix = game.world.matrix;
+let tools = game.world.tools;
 let lenMatrix = matrix.length;
-let tools = game.tools;
 let lenTools = tools.length;
 $(document).ready(intDomHtml);
 function intDomHtml() {
@@ -39,6 +38,7 @@ function clickTool(e) {
     let tool = $(e.target);
 
     let data = $(tool).attr('data');
+    game.updateTool(data);
     console.log(data);
 
     console.log('click');
