@@ -1,8 +1,9 @@
 class Mincraft {
     constructor() {
         this.world = new World();
+        this.tool = new Tool();
     }
     updateTool(tool) {
-        this.world.tools[3]().type
+        this.tool.setTool(tool);
     }
 }
