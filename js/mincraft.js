@@ -15,3 +15,12 @@ class Minecraft {
 
 }
 
+
+function sameTool(element, tool) {
+    if (element === tool) {
+        return true;
+    } else {
+        $(tool).css("border-color", "red");
+        return false;
+    }
+} 
