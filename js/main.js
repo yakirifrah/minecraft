@@ -30,7 +30,7 @@ function intDomHtml() {
         toolBar.append(block);
     }
 
-    $(".box").click(game.GetElementByClick);
+    $(".box").click(game.mine);
 }
 // $(".toolBar").on('click', (event) => {
 //     console.log('click')
