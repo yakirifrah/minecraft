@@ -24,16 +24,22 @@ function intDomHtml() {
             block.addClass(tools[i].class);
         }
         else {
-            let style = `toolBox ${tools[i].class}`
-            block.addClass(style);
+            block.addClass(`toolBox ${tools[i].class}`)
+                .attr('data', tools[i].class)
+            block.click(clickTool);
         }
         toolBar.append(block);
     }
 }
-$('.toolBox').click((event) => {
-    console.log(event.target);
-    // if (condition) {
+// $(".toolBar").on('click', (event) => {
+//     console.log('click')
+//     console.log(event.target);
+// })
+function clickTool(e) {
+    let tool = $(e.target);
 
-    // }
-})
+    let data = $(tool).attr('data');
+    console.log(data);
 
+    console.log('click');
+}
