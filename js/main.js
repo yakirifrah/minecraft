@@ -19,7 +19,8 @@ function intDomHtml() {
     for (let i = 0; i < lenTools; i++) {
         let block = $('<div/>');
         if (i === lenTools - 1) {
-            block.addClass(tools[i].class);
+            // block.addClass(tools[i].class)
+            block.attr('id', tools[i].id)
         }
         else {
             block.addClass(`toolBox ${tools[i].class}`)

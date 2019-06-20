@@ -34,11 +34,11 @@ body {
     background-image: url('../img/menu\ background.jpg');
 }
 
-.toolBox:focus{
+.toolBox:focus {
     border: 2px solid blue;
 }
 
-.toolBox:hover{
+.toolBox:hover {
     cursor: pointer;
     background-color: rgb(1, 1, 104);
 }
@@ -55,15 +55,15 @@ body {
     background-image: url('../img/shovel.png');
 }
 
-.toggleError{
-   background-color: rgb(255, 0, 0);
+.toggleError {
+    background-color: rgb(255, 0, 0);
 }
 
-.pickedToolColor{
+.pickedToolColor {
     border: 2px solid blue;
 }
 
-.CurrentResource {
+#CurrentResource {
     height: 8%;
     width: 50%;
     border: 1px black solid;

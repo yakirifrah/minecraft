@@ -26,8 +26,8 @@ class Minecraft {
         let res = $(div).hasClass(`box sky`);
         if (game.sameTool(element, tool) && !res) {
             game.tool.currentMining.push(div.classList[0]);
-            console.log(object);
-            $('.CurrentResource').addClass(game.tool.currentMining.pop());
+            let CurrentResource = game.tool.currentMining.pop();
+            $('#CurrentResource').attr('class', `${CurrentResource}`);
             $(div).removeClass(div.classList[0]);
             $(div).addClass("sky");
         }
