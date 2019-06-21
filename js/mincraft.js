@@ -20,6 +20,7 @@ class Minecraft {
         }
     }
     mine(e) {
+
         let div = e.target;
         let element = e.target.getAttribute("data");
         let tool = game.tool.getTool();
@@ -31,6 +32,34 @@ class Minecraft {
             $(div).removeClass(div.classList[0]);
             $(div).addClass("sky");
         }
+
+    }
+
+    Craft(event) {
+        let ResourceBeenUsed = false;
+        let craftResource = event.target.classList[0]
+        if (craftResource !== undefined) {
+            $(".box").unbind();
+            $(".box").click(function (event) {
+                let oldBlock = event.target;
+                console.log(oldBlock)
+                if (oldBlock.classList[0] !== "box") {
+                    $(oldBlock).removeClass(oldBlock.classList[0]);
+                    $(oldBlock).addClass(craftResource);
+                    ResourceBeenUsed = true;
+                }
+                else {
+                    $(oldBlock).removeClass(oldBlock.classList[1]);
+                    $(oldBlock).addClass(craftResource);
+                    ResourceBeenUsed = true;
+                }
+            });
+        }
+        if (ResourceBeenUsed === true) {
+            $(".box").unbind();
+            $(".box").click(game.mine);
+        }
+
     }
 
 

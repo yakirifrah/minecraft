@@ -31,6 +31,10 @@ function intDomHtml() {
     }
 
     $(".box").click(game.mine);
+    let a = document.getElementById("CurrentResource");
+    a.addEventListener('click', game.Craft);
+    // $('#CurrentResource')[0].click(game.setResource);
+
 }
 // $(".toolBar").on('click', (event) => {
 //     console.log('click')
