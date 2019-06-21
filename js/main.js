@@ -41,6 +41,7 @@ function intDomHtml() {
 //     console.log(event.target);
 // })
 function clickTool(e) {
+
     let tool = $(e.target);
 
     console.log(tool);

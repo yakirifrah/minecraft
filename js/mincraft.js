@@ -36,7 +36,8 @@ class Minecraft {
     }
 
     Craft(event) {
-        let ResourceBeenUsed = false;
+        var ResourceBeenUsed = false;
+        let craftbox = event.target;
         let craftResource = event.target.classList[0]
         if (craftResource !== undefined) {
             $(".box").unbind();
@@ -53,12 +54,16 @@ class Minecraft {
                     $(oldBlock).addClass(craftResource);
                     ResourceBeenUsed = true;
                 }
+                if (ResourceBeenUsed === true) {
+                    $(".box").unbind();
+                    $(".box").click(game.mine);
+                    $(craftbox).removeClass(craftResource);
+
+
+                }
             });
         }
-        if (ResourceBeenUsed === true) {
-            $(".box").unbind();
-            $(".box").click(game.mine);
-        }
+
 
     }
 
