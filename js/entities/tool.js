@@ -2,7 +2,8 @@ class Tool {
     constructor(type) {
         this.type = null;
         this.id = 'CurrentResource';
-        this.currentMining = [];
+        this.currentMining = null;
+
     }
     getTool() {
         return this.type;
