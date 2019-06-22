@@ -1,0 +1,37 @@
+@font-face {
+    font-family: "Minecraft Regular";
+    src: url("../fonts/Minecraft_Regular/1_Minecraft-Regular.eot") format("eot"),
+        url("../fonts/Minecraft_Regular/1_Minecraft-Regular.woff") format("woff"),
+        url("../fonts/Minecraft_Regular/1_Minecraft-Regular.ttf") format("truetype"),
+        url("../fonts/Minecraft_Regular/1_Minecraft-Regular.svg") format("svg");
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+#landing-page {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url('../img/minecraft.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#landing-page button {
+    text-align: center;
+    width: 120px;
+    height: 30px;
+    font-family: "Minecraft Regular";
+}
+
+#landing-page .button1 {
+    margin: 25% 45% 0 45%;
+}
+
+#landing-page .button2 {
+    margin: 0 45% 0 45%;
+}

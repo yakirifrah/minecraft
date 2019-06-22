@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-image: url('../img/menu\ background.jpg');
+    background-color: #bdc3c7;
 }
 
 .wraper {
@@ -26,12 +26,19 @@ body {
     align-items: center;
 }
 
+.img-tool {
+    width: 120px;
+    height: 120px;
+}
+
 .toolBox {
-    margin-bottom: 10%;
-    height: 15%;
-    width: 100%;
-    border: 1px solid black;
-    background-image: url('../img/menu\ background.jpg');
+    border: 2px dashed;
+    border-color: lightgrey;
+    width: 128px;
+    height: 128px;
+    margin: auto;
+    margin-top: 28px;
+    margin-bottom: 28px;
 }
 
 .toolBox:focus {
@@ -43,16 +50,9 @@ body {
     background-color: rgb(1, 1, 104);
 }
 
-.axe {
-    background-image: url('../img/axe.png');
-}
+.toolSelected {
+    background-color: blue;
 
-.pickaxe {
-    background-image: url('../img/pickaxe.png');
-}
-
-.shovel {
-    background-image: url('../img/shovel.png');
 }
 
 .toggleError {
@@ -91,7 +91,6 @@ body {
 }
 
 .trunk {
-
     background-image: url('../img/wood.jpg');
 }
 
@@ -113,4 +112,9 @@ body {
 .leaf {
 
     background-image: url('../img/leaf.jpg');
+}
+
+
+.tutorialSpot {
+    background-color: aliceblue;
 }
