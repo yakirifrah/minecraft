@@ -3,8 +3,8 @@ let matrix = game.world.matrix;
 let tools = game.world.tools;
 let lenMatrix = matrix.length;
 let lenTools = tools.length;
-$(document).ready(intDomHtml);
-function intDomHtml() {
+$(document).ready(initDomHtml);
+function initDomHtml() {
     let mainCon = $('#world');
     let toolBar = $('.toolBar');
     for (let i = 0; i < lenMatrix; i++) {
