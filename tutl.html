@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title> demo</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+  <style>
+  #toggle {
+    width: 800px;
+    height: 800px;
+    background: #ccc;
+  }
+  </style>
+  <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    
+</head>
+<body>
+ 
+<div id="toggle">
+
+<img src="/img/wood.jpg" alt="">
+
+</div>
+ 
+<script>
+$( document ).click(function() {
+  $( "#toggle" ).toggle( "highlight" );
+});
+</script>
+ 
+</body>
+</html>
