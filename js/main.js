@@ -29,28 +29,16 @@ function intDomHtml() {
         }
         toolBar.append(block);
     }
-
     $(".box").click(game.mine);
-    let a = document.getElementById("CurrentResource");
-    a.addEventListener('click', game.Craft);
-    // $('#CurrentResource')[0].click(game.setResource);
+    $('#CurrentResource').click(game.craft);
 
 }
-// $(".toolBar").on('click', (event) => {
-//     console.log('click')
-//     console.log(event.target);
-// })
-function clickTool(e) {
 
-    let tool = $(e.target);
-
-    console.log(tool);
+function clickTool(event) {
+    let tool = $(event.target);
     let data = $(tool).attr('data');
     game.updateTool(data);
-    game.tool.toolsToggle(e.target);
-    // console.log(data);
-
-    // console.log('click');
+    game.tool.toolsToggle();
 }
 
 
