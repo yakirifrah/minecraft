@@ -18,6 +18,7 @@ function intDomHtml() {
     }
     for (let i = 0; i < lenTools; i++) {
         let block = $('<div/>');
+        let imgTool = $('<img/>');
         if (i === lenTools - 1) {
             // block.addClass(tools[i].class)
             block.attr('id', tools[i].id)
@@ -26,7 +27,11 @@ function intDomHtml() {
             block.addClass(`toolBox ${tools[i].class}`)
                 .attr('data', tools[i].class)
             block.click(clickTool);
+            imgTool.addClass(`img-tool`)
+                .attr('src', `../img/${tools[i].class}.png`);
+            block.append(imgTool);
         }
+
         toolBar.append(block);
     }
     $(".box").click(game.mine);
@@ -35,7 +40,11 @@ function intDomHtml() {
 }
 
 function clickTool(event) {
-    let tool = $(event.target);
+    // console.log(event.currentTarget);
+    let tool = $(event.currentTarget);
+    $('.toolBox').removeClass('toolSelected');
+    console.log(this)
+    $(this).toggleClass('toolSelected');
     let data = $(tool).attr('data');
     game.updateTool(data);
     game.tool.toolsToggle(tool);
