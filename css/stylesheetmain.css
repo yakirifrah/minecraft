@@ -1,21 +1,25 @@
 body {
     height: 100vh;
+    width: 100vw;
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    background-image: url('../img/menu\ background.jpg');
+    overflow-x: inherit;
+    overflow-y: hidden;
+    background-color: #bdc3c7;
+
 }
 
 .wraper {
-    height: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: row;
 }
 
 .world {
-    height: 100%;
-    width: 90%;
-
+    height: 100vh;
+    width: 1382.4px;
+    max-width: 1382.4px;
+    min-width: 1382.4px;
 }
 
 .toolBar {
@@ -26,12 +30,19 @@ body {
     align-items: center;
 }
 
+.img-tool {
+    width: 120px;
+    height: 120px;
+}
+
 .toolBox {
-    margin-bottom: 10%;
-    height: 15%;
-    width: 100%;
-    border: 1px solid black;
-    background-image: url('../img/menu\ background.jpg');
+    border: 2px dashed;
+    border-color: lightgrey;
+    width: 128px;
+    height: 128px;
+    margin: auto;
+    margin-top: 28px;
+    margin-bottom: 28px;
 }
 
 .toolBox:focus {
@@ -43,16 +54,9 @@ body {
     background-color: rgb(1, 1, 104);
 }
 
-.axe {
-    background-image: url('../img/axe.png');
-}
+.toolSelected {
+    background-color: blue;
 
-.pickaxe {
-    background-image: url('../img/pickaxe.png');
-}
-
-.shovel {
-    background-image: url('../img/shovel.png');
 }
 
 .toggleError {
@@ -64,8 +68,8 @@ body {
 }
 
 #CurrentResource {
-    height: 8%;
-    width: 50%;
+    width: 100px;
+    height: 100px;
     border: 1px black solid;
 }
 
@@ -91,7 +95,6 @@ body {
 }
 
 .trunk {
-
     background-image: url('../img/wood.jpg');
 }
 
@@ -116,8 +119,6 @@ body {
 }
 
 
-.tutorialSpot{
+.tutorialSpot {
     background-color: aliceblue;
 }
-
-
