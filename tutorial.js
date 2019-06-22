@@ -9,6 +9,3 @@ $("#btn_world").click(function () {
 });
 
 
-// $(document).ready(function(){       
-//     $('#the_gilad').show();
-//      }); 
