@@ -41,8 +41,6 @@ function clickTool(event) {
     $('.toolBox').removeClass('toolSelected');
     $(this).toggleClass('toolSelected');
     let data = $(tool).attr('data');
-    // console.log(data);
-    $('#world').css('cursor', `url(../img/${data}.png),auto`);
     game.updateTool(data);
     game.tool.toolsToggle(tool);
 
