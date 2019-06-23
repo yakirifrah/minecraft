@@ -20,7 +20,6 @@ function initDomHtml() {
         let block = $('<div/>');
         let imgTool = $('<img/>');
         if (i === lenTools - 1) {
-            // block.addClass(tools[i].class)
             block.attr('id', tools[i].id)
         }
         else {
@@ -28,22 +27,18 @@ function initDomHtml() {
                 .attr('data', tools[i].class)
             block.click(clickTool);
             imgTool.addClass(`img-tool`)
-                .attr('src', `../img/${tools[i].class}.png`);
+                .attr('src', `../img/${tools[i].class}.png`)
+                .attr('title', tools[i].class)
             block.append(imgTool);
         }
-
         toolBar.append(block);
     }
     $(".box").click(game.mine);
     $('#CurrentResource').click(game.craft);
-
 }
-
 function clickTool(event) {
-    // console.log(event.currentTarget);
     let tool = $(event.currentTarget);
     $('.toolBox').removeClass('toolSelected');
-    console.log(this)
     $(this).toggleClass('toolSelected');
     let data = $(tool).attr('data');
     game.updateTool(data);
