@@ -34,32 +34,10 @@ class Minecraft {
         }
     }
     craft(event) {
-        let ResourceBeenUsed = false;
-        let craftbox = event.target;
         let currentMine = game.tool.currentMining;
         if (currentMine !== null) {
             $(".box").unbind();
             $('.box.sky').click(game.addBox);
-
-            // $(".box").click(function (event) {
-            //     let oldBlock = event.target;
-            //     console.log(oldBlock);
-            //     if (oldBlock.classList[0] !== "box") {
-            //         $(oldBlock).removeClass(oldBlock.classList[0]);
-            //         $(oldBlock).addClass(craftResource);
-            //         ResourceBeenUsed = true;
-            //     }
-            //     else {
-            //         $(oldBlock).removeClass(oldBlock.classList[1]);
-            //         $(oldBlock).addClass(craftResource);
-            //         ResourceBeenUsed = true;
-            //     }
-            //     if (ResourceBeenUsed === true) {
-            //         $(".box").unbind();
-            //         $(".box").click(game.mine);
-            //         $(craftbox).removeClass(craftResource);
-            //     }
-            // });
         }
     }
     addBox(event) {
@@ -78,8 +56,6 @@ class Minecraft {
             $('#CurrentResource').removeClass();
 
         }
-
-
     }
 }
 
