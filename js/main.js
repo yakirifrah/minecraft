@@ -20,7 +20,6 @@ function initDomHtml() {
         let block = $('<div/>');
         let imgTool = $('<img/>');
         if (i === lenTools - 1) {
-            // block.addClass(tools[i].class)
             block.attr('id', tools[i].id)
         }
         else {
@@ -28,7 +27,8 @@ function initDomHtml() {
                 .attr('data', tools[i].class)
             block.click(clickTool);
             imgTool.addClass(`img-tool`)
-                .attr('src', `../img/${tools[i].class}.png`);
+                .attr('src', `../img/${tools[i].class}.png`)
+                .attr('title', tools[i].class)
             block.append(imgTool);
         }
         toolBar.append(block);
@@ -41,6 +41,8 @@ function clickTool(event) {
     $('.toolBox').removeClass('toolSelected');
     $(this).toggleClass('toolSelected');
     let data = $(tool).attr('data');
+    // console.log(data);
+    $('#world').css('cursor', `url(../img/${data}.png),auto`);
     game.updateTool(data);
     game.tool.toolsToggle(tool);
 
