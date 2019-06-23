@@ -31,19 +31,14 @@ function initDomHtml() {
                 .attr('src', `../img/${tools[i].class}.png`);
             block.append(imgTool);
         }
-
         toolBar.append(block);
     }
     $(".box").click(game.mine);
     $('#CurrentResource').click(game.craft);
-
 }
-
 function clickTool(event) {
-    // console.log(event.currentTarget);
     let tool = $(event.currentTarget);
     $('.toolBox').removeClass('toolSelected');
-    console.log(this)
     $(this).toggleClass('toolSelected');
     let data = $(tool).attr('data');
     game.updateTool(data);
