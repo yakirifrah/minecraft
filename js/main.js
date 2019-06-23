@@ -27,7 +27,7 @@ function initDomHtml() {
                 .attr('data', tools[i].class)
             block.click(clickTool);
             imgTool.addClass(`img-tool`)
-                .attr('src', `../img/${tools[i].class}.png`)
+                .attr('src', `./img/${tools[i].class}.png`)
                 .attr('title', tools[i].class)
             block.append(imgTool);
         }
