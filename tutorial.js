@@ -1,4 +1,6 @@
-$(document).ready(function () { $("#tools").hide(), $("#world").hide() });
+$(document).ready(function () { 
+    $("#tools").hide(), $("#world").hide() 
+    });
 
 $("#btn_tools").click(function () {
     $("#tools").toggle("highlight");
